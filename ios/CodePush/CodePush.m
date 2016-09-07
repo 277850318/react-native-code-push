@@ -63,6 +63,8 @@ static NSString *bundleResourceSubdirectory = nil;
 {
     // Use the mainBundle by default.
     bundleResourceBundle = [NSBundle mainBundle];
+    [CodePushUpdateUtils verifySignature:@"sdf"
+                                   error:nil];
 }
 
 #pragma mark - Public Obj-C API

@@ -155,6 +155,9 @@ failCallback:(void (^)(NSError *err))failCallback;
 + (NSString *)manifestFolderPrefix;
 + (NSString *)modifiedDateStringOfFileAtURL:(NSURL *)fileURL;
 
++ (BOOL)verifySignature:(NSString *)updateFolderPath
+                  error:(NSError **)error;
+
 + (BOOL)verifyHashForDiffUpdate:(NSString *)finalUpdateFolder
                    expectedHash:(NSString *)expectedHash
                           error:(NSError **)error;
